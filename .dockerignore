@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.git
+outputs/
+*.pt
+*.pth
+*.safetensors
+*.db
+test.py

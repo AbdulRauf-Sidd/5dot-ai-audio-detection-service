@@ -1,5 +1,4 @@
 annotated-types==0.7.0
-fastapi>=0.115
 antlr4-python3-runtime==4.9.3
 audioop-lts==0.2.2
 audioread==3.1.0
@@ -22,7 +21,6 @@ GitPython==3.1.50
 hf-xet==1.5.0
 huggingface_hub==0.36.2
 idna==3.15
-Jinja2==3.1.6
 jmespath==1.1.0
 joblib==1.5.3
 kagglehub==1.0.1
@@ -61,12 +59,13 @@ pooch==1.9.0
 protobuf==7.34.1
 pyarrow==24.0.0
 pycparser==3.0
+psycopg2-binary==2.9.11
 pydantic==2.13.4
 pydantic_core==2.46.4
-python-multipart>=0.0.20
 pydub==0.25.1
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
 pytz==2026.2
 PyYAML==6.0.3
 regex==2026.5.9
@@ -79,7 +78,6 @@ seaborn==0.13.2
 sentry-sdk==2.60.0
 setuptools==82.0.1
 six==1.17.0
-SQLAlchemy>=2.0
 smmap==5.0.3
 soundfile==0.13.1
 soxr==1.1.0
@@ -100,5 +98,5 @@ typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2026.2
 urllib3==2.7.0
-uvicorn[standard]>=0.30
 wandb==0.27.0
+yt-dlp>=2024.1    # for the url_source scan download path
