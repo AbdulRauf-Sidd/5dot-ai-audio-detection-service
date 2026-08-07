@@ -27,7 +27,7 @@ def load_model(model_dir: Path, device: torch.device):
     model_cfg["frontend"]["args"]["source"]    = "unil"
 
     model = build_detector(cfg.model.type, model_cfg)
-    state = torch.load(model_dir / "best_model.pth", map_location=device)
+    state = torch.load(model_dir / "audio_model.pth", map_location=device)
     model.load_state_dict(state["model_state"], strict=False)
     model.to(device).eval()
 
