@@ -24,7 +24,7 @@ def load_model(model_dir: Path, device: torch.device):
 
     stub = model_dir / "_wavlm_large_stub.pt"
     model_cfg["frontend"]["args"]["ckpt_path"] = str(stub)
-    model_cfg["frontend"]["args"]["source"]    = "unil"
+    model_cfg["frontend"]["args"]["source"]    = "fairseq"
 
     model = build_detector(cfg.model.type, model_cfg)
     state = torch.load(model_dir / "audio_model.pth", map_location=device)
